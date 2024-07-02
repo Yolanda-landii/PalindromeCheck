@@ -7,16 +7,16 @@ function checkPalindrome() {
     }
 
     let CheckString = userInput.replace(/[^a-zA-Z]/g, '').toLowerCase();
-    let Palindromestr = true;
+    let PalindromeString = true;
 
     for (let i = 0; i < CheckString.length / 2; i++) {
         if (CheckString[i] !== CheckString[CheckString.length - i - 1]) {
-            Palindromestr = false;
+            PalindromeString = false;
             break;
         }
     }
 
-    if (isPalindrome) {
+    if (PalindromeString) {
         document.getElementById('result').innerText = `"${userInput}" is a palindrome.`;
     } else {
         document.getElementById('result').innerText = `"${userInput}" is not a palindrome.`;
