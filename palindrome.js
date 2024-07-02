@@ -6,12 +6,12 @@ function checkPalindrome() {
         return;
     }
 
-    let cleanedString = userInput.replace(/[^a-zA-Z]/g, '').toLowerCase();
-    let isPalindrome = true;
+    let CheckString = userInput.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    let Palindromestr = true;
 
-    for (let i = 0; i < cleanedString.length / 2; i++) {
-        if (cleanedString[i] !== cleanedString[cleanedString.length - i - 1]) {
-            isPalindrome = false;
+    for (let i = 0; i < CheckString.length / 2; i++) {
+        if (CheckString[i] !== CheckString[CheckString.length - i - 1]) {
+            Palindromestr = false;
             break;
         }
     }
@@ -22,4 +22,4 @@ function checkPalindrome() {
         document.getElementById('result').innerText = `"${userInput}" is not a palindrome.`;
     }
 }
- 
+
